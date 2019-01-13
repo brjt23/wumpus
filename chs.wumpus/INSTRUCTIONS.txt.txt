@@ -1,0 +1,49 @@
+
+***********************************************
+************ WUMPUS GAME **********************
+************INSTRUCTIONS**********************
+***********************************************
+
+Welcome to the Wumpus game! 
+First of all, if you want to configure the game you can edit the file
+“config.properties” located at .\src\main\resources. This configuration 
+contains four fields:
+-Width: the with of the board
+-Height: the height of the board
+-Holes: the number of holes to allocate in the board
+-Arrows: the amount of arrows the hunter has
+They’re all integer values and you can change them in order to configure
+the game.
+
+Once the game is configured and you start the game you’ll see the main 
+menu. There you can choose among different options by writing the 
+character that represents the command and pressing enter key. 
+For example, given the main menu: Select the next action you 
+wanna do:
+- g: Go forward.
+- l: Turn 90º to the left
+- r: Turn 90º to the right
+- a: Use an arrow
+- f: Leave the dungeon
+- q: Quit the game
+
+If you select the command “g”(or G accepts both lower and upper case) 
+the hunter will move one step on the current orientation of the hunter. 
+The hunter always turns 90(right or left) so there are only four possible
+orientations. To turn the hunter to its right you can use command “r”
+and to turn it left the command “l”. The hunter can also use a limited
+amount of arrows(that you can configure at config.properties). To use
+an arrow you use the command “a”.  The arrow will go on until it crashes 
+into a wall or kills the wumpus.. Using “f” when you are on the initial position
+you leave the dungeon, if you leave with the gold you win. if you’re tired to 
+play and you wanna quit you can use command “q” and game will end.
+
+While the hunter is moving it will run into different events, if you find the
+cell that contains the gold it will automatically be added to the hunter’s bag,
+but if you find the wumpus or you fall into a hole the hunter will dye and
+the game will end up. 
+
+Be aware that you don’t see the map so you will need to remember your 
+steps if you wanna leave the dungeon alive and with the gold.
+
+That’s all LET’S PLAY WUMPUS!!
